@@ -1,0 +1,374 @@
+/* Общие стили и сброс */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #771e1e60;
+    background-color: #fcf8f2; /* Очень светлый, теплый фон */
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Dancing Script', cursive; /* Изящный шрифт для заголовков */
+    color: #851818; /* Коричневый для заголовков */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #5e285594; /* Золотистый/желтый для ссылок */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #521414; /* Светло-персиковый */
+    color: #8a1919;
+    padding: 1em 0;
+    border-bottom: 5px solid #FFC0CB; /* Розовый акцент */
+}
+
+header h1 {
+    color: #240303;
+    margin: 0;
+    font-size: 3em;
+    text-align: left;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+header nav {
+    float: right;
+    margin-top: 20px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    margin-left: 25px;
+}
+
+header a {
+    color: #3f3732;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+header a:hover {
+    color: #ad697e; /* Золотистый при наведении */
+    text-decoration: none;
+}
+
+/* Секция "Герой" (первый экран) */
+.hero {
+    background: url('https://via.placeholder.com/1500x600/F0E68C/8B4513?text=Сладкий+мир') no-repeat center center/cover; /* Фон с изображением */
+    color: #bd0048e0;
+    text-align: center;
+    padding: 120px 0;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(48, 35, 35, 0.6); /* Тень для текста на фоне */
+}
+
+.hero h2 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.3em;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #640b0ba8; /* Золотистая кнопка */
+    color: #330a0a;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+}
+
+.btn:hover {
+    background-color: #440c0c; /* Темнее золотистый */
+    text-decoration: none;
+}
+
+/* Секция меню */
+.menu-section {
+    padding: 60px 0;
+    background-color: #9c9797;
+    text-align: center;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.menu-item {
+    background-color: #cec4c4;
+    border: 1px solid #beafaf;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 2px solid #FFDDC1; /* Рамка вокруг фото */
+}
+
+.menu-item h3 {
+    font-size: 1.8em;
+    margin-top: 0;
+    color: #443932;
+}
+
+.menu-item p {
+    font-size: 1em;
+    color: #ad2a2aad;
+    margin-bottom: 15px;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #db0012bd;
+    font-size: 1.4em;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Секция заказных тортов */
+.custom-orders-section {
+    padding: 60px 0;
+    background-color: #FFFAFA; /* Очень светлый, почти белый */
+    text-align: center;
+    border-top: 1px dashed #FFC0CB;
+    border-bottom: 1px dashed #FFC0CB;
+}
+
+.custom-orders-section h2 {
+    color: #632528;
+}
+
+.custom-orders-section p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.custom-features {
+    list-style: none;
+    padding: 0;
+    margin: 30px auto 40px auto;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Для переноса элементов на маленьких экранах */
+}
+
+.custom-features li {
+    background-color: #8f0000;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.808);
+}
+
+/* Секция О нас */
+.about-section {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #883535;
+}
+
+.about-section p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+}
+
+/* Секция Контактов */
+.contact-section {
+    padding: 60px 0;
+    background-color: #FFDDC1; /* Светло-персиковый фон */
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #7e1111c4;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.contact-section a {
+    font-weight: 600;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgb(34, 3, 3);
+    text-align: left; /* Выравнивание элементов формы по левому краю */
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #3a2b30;
+    font-size: 1.1em;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px); /* Учитываем padding */
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Для корректного расчета ширины с padding */
+}
+
+.contact-form textarea {
+    resize: vertical; /* Разрешаем изменение размера только по вертикали */
+    min-height: 120px;
+}
+
+.contact-form button.btn {
+    width: 100%;
+    padding: 18px;
+    font-size: 1.2em;
+    background-color: #330107; /* Коричневая кнопка */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button.btn:hover {
+    background-color: #6B3E19; /* Темнее коричневый */
+}
+
+/* Подвал сайта */
+footer {
+    background-color: #3a081d;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    border-top: 5px solid #3f101098;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+footer .social-links a:hover {
+    color: #FFDDC1; /* Светло-персиковый */
+}
+
+/* Очистка float для контейнера хедера */
+header .container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    header h1 {
+        text-align: center;
+        float: none;
+        padding-left: 0;
+        font-size: 2.5em;
+    }
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 15px;
+    }
+    header li {
+        display: block;
+        margin: 10px 0;
+    }
+    .hero h2 {
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    .menu-grid {
+        grid-template-columns: 1fr; /* Один столбец на маленьких экранах */
+    }
+    .custom-features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2em;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+    .menu-item h3 {
+        font-size: 1.5em;
+    }
+    .menu-item .price {
+        font-size: 1.2em;
+    }
+}
